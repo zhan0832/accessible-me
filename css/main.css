@@ -21,7 +21,27 @@ h6 {
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
+.skip-links{
+  list-style: none;
+  position: absolute;
+  top: -3.5rem;
+  color: rgb(238, 246, 253);
+  background-color: rgb(12, 12, 12);
+}
+.skip-links a:focus{
+  top: 0;
+}
+.skip-links a:hover{
+  top: 0;
+}
+h1{
+  font-weight: bold;
+  font-size: 3rem;
+}
+h2{
+  font-weight: bold;
+  font-size: 2rem;
+}
 img {
   width: 100%;
 }
@@ -29,22 +49,24 @@ img {
 .main-nav ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  
 }
 
 .main-nav ul li a {
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 0.5rem;
-  color: aliceblue;
+  padding: 1rem;
+  color: rgb(238, 246, 253);
   background-color: rgb(12, 12, 12);
 }
 /*add focus and hover for contrast */
