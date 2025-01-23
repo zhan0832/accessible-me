@@ -14,14 +14,16 @@
 
 <body>
   <div class="container">
-    <header class="site-header"><!-- use the proper tag -->
-      <h1>Jam Box Studios</h1>
+    <header role="banner" class="site-header"><!-- use the proper tag -->
+      <h1 role="heading">Jam Box Studios</h1>
       <!-- add skip-links -->
-      <ul class="skip-links">
-        <li><a href="#main-content">Skip to msin-content</a></li>
-        <li><a href="#owner">Skip to meet the owner</a></li>
+      <ul aria-label="skip Links" class="skip-links">
+        
+        <li><a aria-label="skip to main-content" href="#main-content">Skip to main content</a></li>
+        <li><a aria-label="skip to owner information" href="#owner">Skip to meet the owner</a></li>
+        <li><a aria-label="skip to owner contact section" href="#contact-section">Skip to contact section</a></li>
       </ul>
-      <nav class="main-nav">
+      <nav aria-label="Main navigation" class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -31,14 +33,14 @@
       </nav>
       <img src="https://picsum.photos/1200/900" alt=" " class="banner"><!-- add alt="" for image -->
     </header>
-    <main id="main-content"><!-- use the proper tag -->
-      <section>
-        <h2>Welcome to Jam Box</h2>    
+    <main role="mian" id="main-content"><!-- use the proper tag -->
+      <section role="complementary" aria-labelledby="h2-welcome">
+        <h2 id="h2-welcome">Welcome to Jam Box</h2>    
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       </section>
-      <section id="owner">
-        <h2>Meet the owner</h2><!-- change the h1 to h2 -->
+      <section role="" id="owner" aria-labelledby="h2-owner">
+        <h2 id="h2-owner">Meet the owner</h2><!-- change the h1 to h2 -->
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
@@ -53,8 +55,8 @@
           B3T 0L0
         </adress>
       </section>
-      <section class="contact-section">
-        <h2>Contact Us</h2><!-- change the h1 to h2 -->
+      <section role="form" aria-labelledby="contact-section" id="contact-section">
+        <h2 id="contact-section">Contact Us</h2><!-- change the h1 to h2 -->
         <form action="thanks.html">
           <!-- Added for attributes to <label> elements to associate them with inputs. -->
           <label for="full-name">Full Name</label>
@@ -73,7 +75,7 @@
         </form>
       </section>
     </main>
-    <footer class="site-footer"><!-- use the proper tag -->
+    <footer role="contentinfo" class="site-footer"><!-- use the proper tag -->
       &copy; 2021 Jam Box Studios
     </footer>
   </div>

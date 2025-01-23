@@ -21,6 +21,7 @@ h6 {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+/* Add skip links */
 .skip-links{
   list-style: none;
   position: absolute;
@@ -29,9 +30,6 @@ h6 {
   background-color: rgb(12, 12, 12);
 }
 .skip-links a:focus{
-  top: 0;
-}
-.skip-links a:hover{
   top: 0;
 }
 h1{
