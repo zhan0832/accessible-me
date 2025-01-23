@@ -25,7 +25,7 @@ h6 {
 .skip-links{
   list-style: none;
   position: absolute;
-  top: -4rem;
+  top: -5rem;
   color: rgb(12, 12, 12);
 }
 .skip-links a:focus{
