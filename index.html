@@ -61,18 +61,18 @@
         <form action="thanks.html">
           <!-- Added for attributes to <label> elements to associate them with inputs. -->
           <label for="full-name">Full Name</label>
-          <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+          <input aria-label="Enter your full name" type="text" id="full-name" name="full-name" placeholder="Full Name">
 
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email">
+          <input aria-label="Enter your email adress" type="text" id="email" name="email" placeholder="Email">
 
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <input  aria-label="Enter the subject" type="text" id="subject" name="subject" placeholder="Subject">
 
           <label for="message">Your message</label>
-          <textarea id="message" name="message" placeholder="Message here"></textarea>
+          <textarea aria-label="Enter your message" id="message" name="message" placeholder="Message here"></textarea>
 
-          <button type="submit">Send</button>
+          <button role="button" type="submit">Send</button>
         </form>
       </section>
     </main>
