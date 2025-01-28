@@ -24,11 +24,14 @@ h6 {
 /* Add skip links */
 .skip-links{
   list-style: none;
-  position: absolute;
-  top: -5rem;
   color: rgb(12, 12, 12);
 }
+.skip-links a{
+  position: absolute;
+  top: -5rem;
+}
 .skip-links a:focus{
+  position: static;
   top: 0;
 }
 h1{
@@ -67,8 +70,9 @@ img {
   background-color: rgb(12, 12, 12);
 }
 /*add focus and hover for contrast */
-.main-nav ul li a:focus{
-  outline: 4px solid red;
+.main-nav ul li a:focus, .main-nav ul li a:active{
+  text-decoration: underline;
+  color: rgb(251, 188, 0);
 }
 .main-nav ul li a:hover{
   background-color: blue;
@@ -97,8 +101,9 @@ form button {
   text-transform: uppercase;
 }
 /* add focus and hover for contrast */
-form button:focus{
-  outline: 4px solid red;
+form button:focus, form button:active{
+  text-decoration: underline;
+  color: rgb(251, 188, 0);
 }
 form button:hover{
   background-color: blue;
